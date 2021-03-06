@@ -31,13 +31,13 @@ export default function Home() {
     ])
     return (
         <div>
-            <h2>This is Home Page</h2>
+            <h1>Helo</h1>
+            <h2 className='padding'>This is Home Page</h2>
             <div className='grid'>
                 {blogs.map((blog) =>(
                     <div className='card' key={blog.id}>
                         <h2>{blog.title}</h2>
                         <p>{blog.body}</p>
-                        
                         <p className='padding'>Author : {blog.author}</p>
                     </div>
                 ))}
